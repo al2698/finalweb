@@ -20,8 +20,8 @@ app.use(async (ctx, next) => {
   await next()
   console.log('path=', ctx.request.url.pathname)
   await send(ctx, ctx.request.url.pathname, {
-    root: `${Deno.cwd()}/public/`,
-    index: "index.html",
+    root: `${Deno.cwd()}/`,
+    index: "blog.html",
   })
 })
 
@@ -54,5 +54,5 @@ async function create (ctx) {
   }
 }
 
-console.log('Server run at http://127.0.0.1:8000')
-await app.listen({ port: 8000 })
+console.log('Server run at http://127.0.0.1:8032')
+await app.listen({ port: 8032 })

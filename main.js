@@ -71,6 +71,7 @@ R.show = function (post) {
 }
 
 R.savePost = async function () {
+  
   let title = document.querySelector('#title').value
   let body = document.querySelector('#body').value
   let r = await window.fetch('/post', {
