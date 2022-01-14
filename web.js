@@ -13,4 +13,4 @@ app.use(async (ctx) => {
 
 console.log('start at : http://http://127.0.0.1:7031')
 console.log('cwd=', Deno.cwd())
-await app.listen({ port: 8031 });
+await app.listen({ port: 7031 });
